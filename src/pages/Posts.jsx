@@ -1,4 +1,5 @@
 import posts from '../data/posts';
+import { Link } from 'react-router-dom';
 
 export default function Posts() {
     return(
@@ -6,7 +7,15 @@ export default function Posts() {
             <h2> Articulos del blog </h2>
             {posts.map((post) => (
                 <div className='post' key={post.id}>
-                    <h3 className='post-title'> {post.title} </h3>
+                    
+                    <h3 className='post-title'>
+                        
+                        <Link to={`/posts/${post.id}`}>
+                        {post.title}
+                        </Link> 
+                        </h3>
+
+
                     <p className='post-summary'> {post.summary} </p>
                 </div>   
             ))}
