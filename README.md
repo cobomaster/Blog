@@ -1,12 +1,12 @@
-Historia 7: Crear funcionalidad para añadir nuevos posts al blog
+Historia 8: Ver post en detalle
 
-## Objetivo 
- Implementar una funcionalidad que permita a un usuario agregar un nuevo post al blog 
- directamente desde la aplicación, con un formulario para ingresar título, resumen y contenido
+## Objetivo
+Cuando el usuario haga clic en un título desde la lista de artículos, debe navegar a una 
+página donde se muestre el contenido completo del post
 
- ## Tareas
- 1) Crear un componente NewPostForm.jsx con un formulario controlado.
- 2) Gestionar el estado local para almacenar los valores del formulario.
- 3) Añadir validaciones simples (titulo y contenido no vacío).
- 4) Al enivar el formulario, agregar el nuevo post al listado de posts.
- 5) Navegar o actualizar la vista para mostrar el nuevo post.
+## Tareas
+1) Crear el componente PostDetail.jsx
+2) Leer el parámetro id desde la URL usando useParams
+3) Buscar el post correspondiente por id
+4) Mostrar el contenido completo del post
+5) Manejar caso en el que no se encuentre el post.
