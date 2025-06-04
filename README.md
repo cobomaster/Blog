@@ -1,9 +1,11 @@
-Historia 10: Ordenar Post del más nuevo al más antiguo
+Historia 11: Persistencia en LocalStorage
 
-## Objetivo
-Mostrar los posts en orden cronológico inverso, es decir, el más reciente primero.
+## Objetivos
+Guardar los artículos en el navegador (LocalStorage) y cargarlos al iniciar la App
 
 ## Tareas
-1) Guardar la fecha de creación de creación en cada post
-2) Ordenar el array de posts antes de renderizarlo
-
+1) Leer los articulos guardados en localStorage cuando cargue el componente posts.jsx
+    -- si no hay nada guardado, usar los props por defecto (data/posts.js)
+2) Guardar automaticamente los articulos en localStorage cada vez que el estado posts cambie
+(es decir, cada vez que se añada un post nuevo).
+3) Asegurate de que todo sigue funcionando igual (añadir post, verlos listados, navegar al detalle).
