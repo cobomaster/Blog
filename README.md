@@ -1,12 +1,10 @@
-Historia 8: Ver post en detalle
+Historia 9: Validar formulario de nuevo Post
 
-## Objetivo
-Cuando el usuario haga clic en un título desde la lista de artículos, debe navegar a una 
-página donde se muestre el contenido completo del post
+## Objetivo 
+Evitar que se creen artículos sin título, resumen o contenido. se debe validar el formulario
+antes de añadir el post, y mostrar un mensjae de error si falta algún campo.
 
 ## Tareas
-1) Crear el componente PostDetail.jsx
-2) Leer el parámetro id desde la URL usando useParams
-3) Buscar el post correspondiente por id
-4) Mostrar el contenido completo del post
-5) Manejar caso en el que no se encuentre el post.
+1) Añadir estado para errores
+2) Validar los campos antes de llamar a onAddPost
+3) Mostrar mensajes de error si hay campos vacíos

@@ -10,20 +10,19 @@ export default function NewPostForm({ onAddPost }){
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!title.trim() || !content.trim()){
-            setError ("Titulo y contenido son obligatorios");
+        if (!title.trim() || !summary.trim() || !content.trim()) {
+            setError ("Por favor, completa todos los campos.");
             return;
         }   
 
         const newPost = {
-            id: Date.now().toString(),
+            id: Date.now(),
             title, 
             summary, 
             content,
         };
 
         onAddPost(newPost);
-
         setTitle('');
         setSummary('');
         setContent('');
@@ -33,7 +32,7 @@ export default function NewPostForm({ onAddPost }){
     return (
         <form onSubmit={handleSubmit} className="new-post-form">
             <h2> Crear nuevo post </h2>
-            {error && <p className="error">{error}</p>}
+            {error && <p className="form-error">{error}</p>}
             <input 
             type="text"
             placeholder="Título"
