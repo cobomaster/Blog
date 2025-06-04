@@ -1,0 +1,29 @@
+.posts-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.post {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post-title {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post-title:hover {
+  text-decoration: underline;
+}
+
+.post-summary {
+  color: #555;
+  margin-top: 0.5rem;
+}

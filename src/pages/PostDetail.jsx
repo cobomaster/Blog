@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import posts from "../data/posts";
+import "./PostDetail.css";
 
 export default function PostDetail() {
     const { id }  = useParams();

@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #007bff;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #cce5ff;
+}
