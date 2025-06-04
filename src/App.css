@@ -1,0 +1,10 @@
+.navbar{
+    padding: 1rem;
+    background-color: 1px solid #ccc;
+}
+
+.nav-link {
+ margin-right: 1rem;
+ text-decoration: none;
+ color: inherit;   
+}
