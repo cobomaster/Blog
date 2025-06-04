@@ -20,6 +20,7 @@ export default function NewPostForm({ onAddPost }){
             title, 
             summary, 
             content,
+            date: new Date().toISOString(),
         };
 
         onAddPost(newPost);

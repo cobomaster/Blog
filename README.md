@@ -1,10 +1,9 @@
-Historia 9: Validar formulario de nuevo Post
+Historia 10: Ordenar Post del más nuevo al más antiguo
 
-## Objetivo 
-Evitar que se creen artículos sin título, resumen o contenido. se debe validar el formulario
-antes de añadir el post, y mostrar un mensjae de error si falta algún campo.
+## Objetivo
+Mostrar los posts en orden cronológico inverso, es decir, el más reciente primero.
 
 ## Tareas
-1) Añadir estado para errores
-2) Validar los campos antes de llamar a onAddPost
-3) Mostrar mensajes de error si hay campos vacíos
+1) Guardar la fecha de creación de creación en cada post
+2) Ordenar el array de posts antes de renderizarlo
+
