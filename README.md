@@ -1,13 +1,10 @@
-Historia 4: Ver un artículo individual al hacer clic
+Historia 5: Página 404 y navegacion segura
 
 ## Objetivo
-Permitir que el usuario haga clic en un articulo y se abra una vista con el contenido
-completo (SPA, sin recargar la página).
+Mostrar una página personalizada cuando el usuario intenta acceder a una ruta que no
+existe. esto mejora la experiencia de usuario y evita confusión
 
 ## Tareas realizadas
-1) Añadir una nueva ruta dinámica (/posts/:id) en App.jsx
-2) Crear una pagina PostDetail.jsx que recibe el id desde la URL
-3) Buscar el artículo correspondiente en posts.js usando ese id
-4) Mostrar el título, resumen y contenido (aunque sea simulado)
-5) Agregar enlaces con Link en el listado
-
+1) Crear un nuevo componente NotFound.jsx
+2) Añadir una ruta comodin * en APP.JSX para capturar rutas incorrectas.
+3) Incluir un botón/enlace para volver al inicio
