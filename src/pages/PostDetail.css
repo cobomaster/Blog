@@ -1,38 +1,112 @@
-.post-detail {
+.post-detail-container {
   max-width: 700px;
   margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.post-detail h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.post-detail .post-content {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.post-detail-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 700px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .post-detail-title {
   font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: #1a73e8;
+}
+
+.post-detail-date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.post-detail-content-box {
+  min-height: 150px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.post-detail-textarea {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  resize: vertical;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
+}
+
+.post-detail-button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.post-detail-button {
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.post-detail-button-save {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.post-detail-button-save:hover {
+  background-color: #155ab6;
+}
+
+.post-detail-button-cancel {
+  background-color: #ddd;
   color: #333;
 }
 
-.post-detail-content {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
+.post-detail-button-cancel:hover {
+  background-color: #bbb;
+}
+
+.post-detail-button-edit {
+  background-color: #1a73e8;
+  color: white;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.post-detail-button-edit:hover {
+  background-color: #155ab6;
+}
+
+.post-detail-link {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.post-detail-link:hover {
+  text-decoration: underline;
 }
