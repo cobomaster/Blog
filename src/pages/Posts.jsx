@@ -1,4 +1,3 @@
-// src/pages/PostsPage.jsx
 import React, { useState, useEffect } from 'react';
 import initialPosts from '../data/posts';
 import { Link } from 'react-router-dom';
@@ -17,6 +16,11 @@ export default function PostsPage() {
 
     const handleAddPost = (newPost) => {
         setPosts([newPost, ...posts]);
+    };
+
+    const handleDeletePost = (id) => {
+        const updatedPosts = posts.filter(post => post.id !== id);
+        setPosts(updatedPosts);
     };
 
     const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -38,6 +42,9 @@ export default function PostsPage() {
                             Publicado el {new Date(post.date).toLocaleDateString()}
                         </p>
                     )}
+                    <button className='delete-button' onClick={() => handleDeletePost(post.id)}>
+                        Eliminar
+                    </button>
                 </div>
             ))}
         </div>

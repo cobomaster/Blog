@@ -1,4 +1,7 @@
-Historia 12: Cargar contenido de Inicio y Sobre Mi:
+Historia 13: Añadir botón para eliminar posts
 
 ## Tarea
--- Cargar contenidos
+Agregar un botón en cada post para eliminarlo de la lista y actualizar el localStorage
+
+## Cambios a realizar
+1) Crear un boton para poder eliminar Posts
